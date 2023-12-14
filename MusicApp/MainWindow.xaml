@@ -157,8 +157,8 @@
                         <Icon:PackIconMaterial Kind="SkipPrevious" Style="{StaticResource playerButtonIcon}"/>
                     </Button>
 
-                    <Button Style="{StaticResource playerButton}">
-                        <Icon:PackIconMaterial Kind="Pause" Style="{StaticResource playerButtonIcon}"/>
+                    <Button Click="Button_Click" Style="{StaticResource playerButton}">
+                        <Icon:PackIconMaterial x:Name="PlayPauseIcon" Kind="Play" Style="{StaticResource playerButtonIcon}"/>
                     </Button>
 
                     <Button Style="{StaticResource playerButton}">

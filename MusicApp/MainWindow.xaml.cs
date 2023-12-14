@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.IconPacks;
+using System;
 using System.Windows;
 using System.Windows.Input;
 
@@ -20,6 +21,19 @@ namespace MusicApp
             if (e.ChangedButton==MouseButton.Left)
             {
                 this.DragMove();
+            }
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (PlayPauseIcon.Kind == PackIconMaterialKind.Play)
+            {
+                PlayPauseIcon.Kind = PackIconMaterialKind.Pause;
+                // Thêm mã để bắt đầu phát nhạc tại đây
+            }
+            else
+            {
+                PlayPauseIcon.Kind = PackIconMaterialKind.Play;
+                // Thêm mã để tạm dừng phát nhạc tại đây
             }
         }
     }
